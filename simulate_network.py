@@ -7,7 +7,7 @@ from plotly.graph_objs import *
 import networkx as nx
 
 # initialize plotly for offline mode
-py.init_notebook_mode(connected=True)
+#py.init_notebook_mode(connected=True)
 
 
 class Node():
@@ -331,7 +331,7 @@ class Visualizer():
                                        ),
                             )
 
-            py.iplot(fig, filename='index.html')
+            py.plot(fig, filename='index.html')
 
     def play_movie(self):
         # Create the graph
